@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Arial, Helvetica, sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran pendaftaran lomba {{competition_name}} diterima</title>
+    <style>
+        html, div, h1, h2, h3, h4, h5{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .email-logo{
+            width:150px;
+            margin-left:auto;
+            margin-right:auto;
+            display: block;
+            margin-top:20px;
+            margin-bottom:40px;
+        }
+        .email-body{
+            margin: 50px 20px 50px 20px;
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .instruction{
+            margin:5px 0px 5px 0px;
+        }
+        .divider{
+            height:25px;
+        }
+        .title{
+            font-weight: 400;
+            font-size:24px;
+            line-height: 130%;
+        }
+        .sub-title{
+            color: gray;
+            font-weight: 600;
+        }
+        .box{
+            padding:10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            display:flex;
+            flex-direction: row;
+            width: max-content;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .account-number{
+            margin:0px;
+            color: #f2711c;
+        }
+        p{
+            line-height: 200%;
+            color: #3b3b3b;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .col{
+            margin-left:20px;
+            margin-right:20px;
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+        .icon{
+            width:30px
+        }
+        .payment-instruction{
+            margin: 20px
+        }
+        li{
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .account-name{
+            margin:0px;
+            color: gray
+        }
+        .black{
+            color:black;
+        }
+        b{
+            color:black
+        }
+        li{
+            color:gray;
+        }
+        tr,td{
+            padding:15px 20px;
+            border: 1px solid lightgray;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .event-online{
+            border: 2px solid red;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px 0px;
+            line-height: 150%;
+            color: #ff3a3a;
+            font-weight: 600;
+        }
+        .social-media-footer{
+            margin: 15px auto;
+            color: gray;
+            width: max-content;
+            text-align: center;
+        }
+        .social-media-row{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px auto;
+            text-align: center;
+            width: max-content;
+        }
+
+        .social-footer td, .social-footer tr{
+            border: 0px;
+            padding: 10px;
+        }
+
+        .social-footer{
+            margin: 10px auto;
+            width: auto;
+        }
+
+        .social-media-row a{
+            margin: 0px 15px;
+
+        }
+        .social-media-logo{
+            width: 30px;
+        }
+        .email-footer-logo{
+            width:150px;
+            margin-left:auto;
+            margin-right:auto;
+            display: block;
+            margin-top:50px;
+        }
+        .contact-footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-body" style="font-family: Arial, Helvetica, sans-serif;margin: 50px 20px 50px 20px;width: 70%;display: block;margin-left: auto;margin-right: auto;">
+        <h1 class="title" style="font-family: Arial, Helvetica, sans-serif;font-weight: 400;font-size: 24px;line-height: 130%;">Pembayaran pendaftaran lomba <b style="color: black;">{{competition_name}}</b> diterima</h1>
+        <p class="black" style="line-height: 200%;color: black;margin-top: 10px;margin-bottom: 10px;">Hallo {{name}} !</p>
+        <p style="line-height: 200%;color: #3b3b3b;margin-top: 10px;margin-bottom: 10px;">Terima kasih telah melakukan pendaftaran lomba Smakonecup 2023</p>
+        <p style="line-height: 200%;color: #3b3b3b;margin-top: 10px;margin-bottom: 10px;">Pembayaran lomba <b>{{competition_name}}</b> untuk tim <b>{{team_name}}</b> sejumlah <b>{{amount}}</b> telah kami terima dan pendaftaran Anda dinyatakan berhasil. Mohon simpan email ini sebagai bukti pendaftaran.</p>
+        <div class="footer" style="font-family: Arial, Helvetica, sans-serif;">
+            <p style="line-height: 200%;color: #3b3b3b;margin-top: 10px;margin-bottom: 10px;">
+                Apabila memiliki pertanyaan maupun keluhan silahkan menghubungi kami melalui email xxx atau melalui sosial media kami <br> 
+            </p>
+            <p style="line-height: 200%;color: #3b3b3b;margin-top: 10px;margin-bottom: 10px;">Mohon tidak membalas email ini, karena kami tidak dapat menerima email melalui alamat email ini</p>
+        </div>
+        <p class="contact-footer" style="line-height: 200%;color: #3b3b3b;margin-top: 10px;margin-bottom: 10px;text-align: center;">
+            Email ini ditujukan untuk {{email}}<br>
+            Copyright © 2023 Smakonecup. All rights reserved. 
+        </p>
+    </div>
+</body>
+</html>
